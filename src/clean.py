@@ -16,6 +16,7 @@ def clean_data(df):
     return df 
 
 if __name__ == '__main__':
+    print('Cleaning data...')
     # Load the data
     df = pd.read_csv('data/raw/iris.csv')
 

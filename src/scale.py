@@ -14,6 +14,7 @@ def scale_data(df):
 
 
 if __name__ == '__main__':
+    print('Scaling data...')
     # Load the data
     df = pd.read_csv('data/prepared/cleaned_iris.csv')
 

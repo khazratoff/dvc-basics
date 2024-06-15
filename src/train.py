@@ -8,6 +8,7 @@ from dvclive import Live
 import yaml
 
 def train():
+    print("Training model...")
     data_path = os.path.dirname(__file__) + "/../data/prepared/prepared_iris.csv"
     data = pd.read_csv(data_path)
     X = data.drop("variety", axis=1)
