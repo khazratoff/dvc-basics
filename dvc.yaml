@@ -1,0 +1,21 @@
+stages:
+  clean:
+    cmd: python src/clean.py
+    deps:
+    - data/raw/iris.csv
+    - src/clean.py
+    outs:
+    - data/prepared/cleaned_iris.csv
+  scale:
+    cmd: python src/scale.py
+    deps:
+    - data/prepared/cleaned_iris.csv
+    - src/scale.py
+    outs:
+    - data/prepared/prepared_iris.csv
+  train:
+    cmd: python src/train.py
+    deps:
+    - data/prepared/prepared_iris.csv
+    - src/train.py
+
