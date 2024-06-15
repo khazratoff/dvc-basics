@@ -1,0 +1,3 @@
+train:
+  n_estimators: 50
+  
